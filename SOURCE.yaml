@@ -1,0 +1,13 @@
+# Vendored from docker-library/php. Do not edit the Dockerfile or the helper scripts.
+upstream:
+  repository: https://github.com/docker-library/php
+  commit: e3eaff845f7a9f7259c31da54dce0320b47a3bbd
+  path: 8.4/bookworm/apache
+  license: MIT
+php:
+  version: 8.4.27
+  url: https://www.php.net/distributions/php-8.4.27.tar.xz
+  sha256: dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0
+image: ghcr.io/linkorb/php-8.4.27:8.4.27-apache-bookworm
+replaces: php:8.4.27-apache-bookworm
+arch: linux/amd64
